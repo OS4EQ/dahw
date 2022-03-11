@@ -2,6 +2,7 @@
 <html>
   <head>
     <script src="https://unpkg.com/@oseq/auma/dist/auma-decision-tree.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
     <script>
@@ -9,10 +10,10 @@
         id: "demo-decision-tree",
         theme: {
           logoUrl: "./image/logo.png",
-          buttonYesBgColor: "#3D85C6",
-          buttonYesFgColor: "#3D85C6",
-          buttonNoBgColor: "#15D798",
-          buttonNoFgColor: "#15D798",
+          buttonYesBgColor: "#b63082",
+          buttonYesFgColor: "#ffffff",
+          buttonNoBgColor: "#a554b7",
+          buttonNoFgColor: "#ffffff",
         },
         welcome: {
           audioUrl: "./audio/intro.mp3",
@@ -20,30 +21,79 @@
         questions: [
           {
             id: "1",
-            audioUrl: "./audio/1.mp3",
-            imageUrl: "./image/1.jpg",
+            audioUrl: "./audio/Audio-1-slide-1-e-2.mp3",
+            imageUrl: "./image/img1.jpg",
             onYes: "question:3",
             onNo: "question:2",
           },
           {
             id: "2",
-            audioUrl: "./audio/2.mp3",
-            imageUrl: "./image/2.jpg",
-            onYes: "result:outro",
-            onNo: "result:outro",
+            audioUrl: "./audio/Audio-2-slide-3.mp3",
+            imageUrl: "./image/img2.jpg",
+            onYes: "question:8",
+            onNo: "question:3",
           },
           {
             id: "3",
-            audioUrl: "./audio/3.mp3",
-            imageUrl: "./image/3.jpg",
-            onYes: "result:outro",
-            onNo: "result:outro",
+            audioUrl: "./audio/Audio-3-slide-4.mp3",
+            imageUrl: "./image/img3.jpg",
+            onYes: "question:5",
+            onNo: "question:6",
+          },
+          {
+            id: "4",
+            audioUrl: "./audio/Audio-4-slide-5.mp3",
+            imageUrl: "./image/img4.jpg",
+            onYes: "question:6",
+            onNo: "question:5",
+          },
+          {
+            id: "5",
+            audioUrl: "./audio/Audio-5-slide-6.mp3",
+            imageUrl: "./image/img5.jpg",
+            onYes: "question:8",
+            onNo: "question:7",
+          },
+          {
+            id: "6",
+            audioUrl: "./audio/Audio-6-slide-7.mp3",
+            imageUrl: "./image/img6.jpg",
+            onYes: "question:8",
+            onNo: "question:7",
+          },
+          {
+            id: "7",
+            audioUrl: "./audio/Audio-7-slide-8.mp3",
+            imageUrl: "./image/img7.jpg",
+            onYes: "question:8",
+            onNo: "question:6",
+          },
+          {
+            id: "8",
+            audioUrl: "./audio/Audio-8-slide-9.mp3",
+            imageUrl: "./image/img8.jpg",
+            onYes: "question:9",
+            onNo: "question:6",
+          },
+          {
+            id: "9",
+            audioUrl: "./audio/Audio-9-slide-10.mp3",
+            imageUrl: "./image/img9.jpg",
+            onYes: "question:8",
+            onNo: "result:10",
+          },
+          {
+            id: "10",
+            audioUrl: "./audio/Audio-10-slide-11.mp3",
+            imageUrl: "./image/img1.jpg",
+            onYes: "question:8",
+            onNo: "question:7",
           },
         ],
         results: [
           {
-            id: "outro",
-            audioUrl: "./audio/outro.mp3",
+            id: "11",
+            audioUrl: "./audio/Audio-10-slide-11-outro.mp3",
             imageUrl: "./image/outro.jpg",
           },
         ],
