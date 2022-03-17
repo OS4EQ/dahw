@@ -1,4 +1,7 @@
-circle{
+/* circle{
+    fill: #b63082 !important;
+} */
+[fill="#ddd"]{
     fill: #b63082 !important;
 }
 path{
@@ -6,6 +9,7 @@ path{
 }
 .app__logo{
     justify-content: center !important;
+    padding-bottom:20px;
 }
 .app__logo-img{
     max-width: 55% !important;
